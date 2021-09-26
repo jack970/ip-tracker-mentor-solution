@@ -1,0 +1,113 @@
+body {
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    background: url("images/pattern-bg.png") no-repeat;
+    background-size: 100% 50%;
+}
+
+#mapid {
+    height: 41rem;
+    margin-top: 7rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+hr {
+    height: 5.3rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    color:hsl(0, 0%, 59%);
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.info {
+    color: black;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+}
+
+.input {
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 15px 0 0 15px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-button {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0 15px 15px 0;
+}
+
+.input-button:active {
+    background-color: hsl(0, 0%, 17%);
+}
+
+.painel {
+    background-color: #fff;
+    display: flex;
+    top: 13rem;
+    left: 0;
+    right: 0;
+    min-width: min-content;
+    max-width: fit-content;
+    z-index: 1000;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.container-info {
+    padding: 2rem;
+    width: 100%;
+}
+
+.title-info {
+    margin: 0;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1047px) {
+    .painel {
+        display: block;
+        top: 11rem;
+    }
+
+    .container-info {
+        width: auto;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
