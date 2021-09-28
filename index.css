@@ -95,6 +95,89 @@ input::placeholder {
     text-transform: uppercase;
 }
 
+.block-all {
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    background: rgba(0,0,0,.4);
+    height: 100%;
+    width: 100%;
+}
+
+.block-wrapper {
+    max-width: 480px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.06);
+}
+
+.show {
+    display: block;
+}
+
+.block-wrapper .block-content,
+.block-content .warn-icon,
+.warn-icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-wrapper .block-content {
+    flex-direction: column;
+}
+
+.block-content .warn-icon {
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+}
+
+.warn-icon span {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: inherit;
+}
+
+.warn-icon span i {
+    font-size: 50px;
+    background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.block-content h2 {
+    margin-top: 35px;
+    font-size: 32px;
+}
+
+.block-content p {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.block-content button {
+    margin-top: 30px;
+    padding: 15px 33px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1047px) {
     .painel {
         display: block;
