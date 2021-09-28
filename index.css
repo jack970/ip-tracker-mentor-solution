@@ -200,10 +200,13 @@ input::placeholder {
     height: 100%;
     z-index: 1000;
     position: absolute;
+    text-align: center;
+    color: #fff;
     top: 0;
     left: 0;
     background-color: #4A4BAA;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
