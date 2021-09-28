@@ -16,6 +16,4 @@ window.addEventListener('DOMContentLoaded', () => {
             renderData(data.ip)  
         })
 })
-
-
     

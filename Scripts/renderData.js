@@ -29,8 +29,18 @@ const renderData = (urlNoHttp) => {
             document.querySelector(".painel").innerHTML = html
 
             getLocationMap(data.location.lat, data.location.lng)
+            hiddenLoadPage()
 
     }).catch(console.error)
+}
+
+const hiddenLoadPage = () => {
+    const loadClass = document.querySelector(".loader-wrapper")
+    loadClass.classList.add('hidden') // Esconde loader container
+    window.setTimeout(() => {
+        loadClass.remove()
+    }, 900)
+
 }
 
 export default renderData
